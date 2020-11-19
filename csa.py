@@ -1,11 +1,12 @@
 #YURI ARMANDO
 import random
-import logging
+import math
 
 def control_input(input_num):
+   #......
+    return numprimo(input_num)
    
-    return sympy.numprimo(input_num)
-def lcm(p, q):
+def mcm(p, q):
    if p > q:
       maggiore = p
    else:
@@ -33,25 +34,16 @@ def euclide(c, m):
 def Euclidean_Algorithm(a, b):
 
     if a!=b:
-        #.....
         if a > b:
             a = a-b
         else:
             b = b-a
-    else:
-
         return a
 def main():
     while True:
 
         num1 = int(input("Inserisci un numero : "))
         num2 = int(input("Inserisci il secondo numero : "))
-
-        if control_input(num1) != True:
-            logging.error(f"Numero non primo")
-        elif control_input(num2) != True:
-            logging.error(f"Numero non primo")
-        else:
     return
 
 
